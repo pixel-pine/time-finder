@@ -41,12 +41,9 @@ To stop the server type Ctrl-c in your terminal.
 
 You may need to stop the server and restart it in order to apply changes (follow below instructions):
 
-After you executed all these steps, and want to relaunch the development server, you only need these commands:
+After you executed all these steps, and want to relaunch the development server, you only need these commands (you do not need to activate venv if it is already activated!):
 
 ```
-
-python -m venv venv
-
 
 #for Windows:
 ./venv/Scripts/activate
@@ -54,7 +51,7 @@ python -m venv venv
 #for mac/linux:
 source venv/bin/activate
 
-#the following two commands are necessary if you've made changes to the backend (ex: editing or creating a new model):
+#the following two commands are only necessary if you've made changes to the backend (ex: editing or creating a new model):
 python manage.py makemigrations
 
 python manage.py migrate
