@@ -14,4 +14,6 @@ class Availability(models.Model):
 
     class Meta:
         unique_together = ('user', 'start_time', 'end_time')
+        verbose_name = "Availability"
+        verbose_name_plural = "Availabilities" #Stating plural name because django adds an s to make a name plural
 

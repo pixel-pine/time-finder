@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from time_finder_api.views import UserAvailabilityCalendarView, AvailabilityListCreateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/availability/calendar/<str:username>/', UserAvailabilityCalendarView.as_view(), name='user_availability_calendar'),
+    path('api/availability/', AvailabilityListCreateView.as_view(), name='availability-list-create'),
 ]
