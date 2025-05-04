@@ -1,0 +1,1 @@
+//Corresponds to AvailabilityListCreateView
